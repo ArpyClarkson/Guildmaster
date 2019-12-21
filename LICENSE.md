@@ -1,2 +1,2 @@
 
-Copyright (C) 2019 Andrew
+Copyright (C) 2019 Andrew & Cute polska boy
