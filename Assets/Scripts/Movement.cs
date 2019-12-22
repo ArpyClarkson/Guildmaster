@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
 public class Movement : MonoBehaviour {
-	public float maxSpeed;
-	public float rotationRate;
+	public float maxSpeed = 10.0f;
+	public float rotationRate = 2.0f;
 	float pitch;
 
     void Update() {
