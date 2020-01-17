@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
-using SimpleJson;
-
-public struct Point {
-	public float x, y;
-}
 
 public class Building {
-	public List<Point> points = new List<Point>();
+	public List<Vector2> points = new List<Vector2>();
 }
 
 public static class JSONDeserialize {
@@ -27,7 +21,7 @@ public static class JSONDeserialize {
 			buildings.Add(building);
 
 			foreach(var pointData in buildingData[0]) {
-				building.points.Add(new Point{ x = (float)(pointData[0]*100.0), y = (float)(pointData[1]*100.0) });
+				building.points.Add(new Vector2{ x = (float)(pointData[0]*100.0), y = (float)(pointData[1]*100.0) });
 			}
 		}
 
