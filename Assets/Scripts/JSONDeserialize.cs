@@ -21,7 +21,7 @@ public static class JSONDeserialize {
 			buildings.Add(building);
 
 			foreach(var pointData in buildingData[0]) {
-				building.points.Add(new Vector2{ x = (float)(pointData[0]*10000.0), y = (float)(pointData[1]*10000.0) });
+				building.points.Add(new Vector2( (float)pointData[0]*10000.0f, (float)pointData[1]*10000.0f));
 			}
 		}
 
